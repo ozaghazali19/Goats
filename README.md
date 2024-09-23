@@ -1,55 +1,5 @@
-# Real Goats Bot Telegram Automation Script
 
-GoatsBot is an automation script for completing missions, checking in, and spinning the slot machine on the Real Goats Bot Telegram. This script handles multiple accounts, automates login, mission completion, and daily check-ins.
-
-[TELEGRAM CHANNEL](https://t.me/Deeplchain) | [TWITTER](https://x.com/itsjaw_real)
-
-## Register
-
-To use this bot, you need to register it with the Goats Telegram Bot. 
-
-1. Open the bot [t.me/Realgot_real](https://t.me/realgoats_bot/run?startapp=99effa5e-ac44-4be5-8f0d-64cf69f796e9)
-2. Click on the "[Start App](https://t.me/realgoats_bot/run?startapp=99effa5e-ac44-4be5-8f0d-64cf69f796e9)" or "[Open App]([url](https://t.me/realgoats_bot/run?startapp=99effa5e-ac44-4be5-8f0d-64cf69f796e9))" button
-3. Install This Real Goats Automations Bot
-4. Have Fun 🦈
-
-## Features
-- **Watching Ads**: Every 5 minutes automatically watching ads to earn + 500 GOATS `NEW`
-- **Automated Login**: Logs in automatically using account details.
-- **Mission Completion**: Completes available missions and collects rewards.
-- **Daily Check-in**: Checks in daily and collects rewards.
-- **Slot Machine**: Spins the slot machine if coins are available.
-- **Multi-account Support**: Automates For multiple accounts listed in `data.txt`.
-- **Enable Proxies**: To use proxies, set `use_proxies` to `true` in `config.json`.
-
-## Requirements
-
-- Python 3.7+
-- `aiohttp` for asynchronous HTTP requests
-- `colorama` for colored output
-- Other dependencies listed in `requirements.txt`
-
-## Setup and Installation
-
-### Step 1: Clone the repository
-```bash
-git clone https://github.com/jawikas/goats-bot.git
-cd goats-bot
-```
-**Create a virtual environment (optional but recommended)**
-
- ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
- ```
-### Step 2: Install dependencies
-You can install the required packages by running the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 3: Configure accounts
+### Step 1: Configure accounts
 Create a `data.txt` file in the root directory.
 Add Telegram authentication data for each account on a new line:
 
@@ -70,7 +20,7 @@ query_id=xxxxxxxxx-3
 9. Decode query_id= with https://www.urldecoder.org/
 10. add it to `data.txt` file or create it if you dont have one
 
-### Step 4: Modify Configurations (Optional)
+### Step 2: Modify Configurations (Optional)
 The `config.json` file allows you to modify script settings:
 account_delay: Time (in seconds) between account operations.
 looping: Time (in seconds) before starting a new loop of account runs.
@@ -96,7 +46,7 @@ username:password@ip:port
 username:password@ip:port
 ```
 
-### Step 5: Run the script
+### Step 3: Run the script
 To start the bot, run:
 
 ```bash
@@ -108,16 +58,3 @@ python main.py
 `Error handling` is implemented to gracefully manage login and mission completion failures.
 Proxy Format The proxies should be listed in a `proxies.txt` file with the format `username:password@ip:port`, one proxy per line.
 Random Proxy Assignment The script will assign a proxy from the list for each account.
-
-### This bot helpfull?  Please support me by buying me a coffee: 
-```
-0x705C71fc031B378586695c8f888231e9d24381b4 - EVM
-TDTtTc4hSnK9ii1VDudZij8FVK2ZtwChja - TRON
-UQBy7ICXV6qFGeFTRWSpnMtoH6agYF3PRa5nufcTr3GVOPri - TON
-```
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-For questions or support, please contact [ https://t.me/DeeplChainSup ]
